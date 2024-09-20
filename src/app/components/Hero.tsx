@@ -9,7 +9,7 @@ const Hero = () => {
         <div className='flex justify-between items-center pt-10 p-5'>
             <div className='w-100'>
                 <p className='primary-color tracking-widest'>HELLO!</p>
-                <p className='text-5xl font-bold primary-color mt-5'><span className='text-white'>I'm </span>Pradeep</p>
+                <p className='text-5xl font-bold primary-color mt-5'><span className='text-white'>I&lsquo;m </span>Pradeep</p>
                 <p className='text-5xl font-bold primary-color'>Rawat</p>
 
                 <p className='text-xl py-6'>A freelancer web developer</p>
@@ -32,7 +32,7 @@ const Hero = () => {
           <div className='absolute inset-0 flex flex-col justify-center items-center text-center'>
             <div className='pt-40'>
                 <p className='primary-color tracking-widest'>HELLO!</p>
-                <p className='text-5xl font-bold primary-color mt-5'><span className='text-white'>I'm </span>Pradeep</p>
+                <p className='text-5xl font-bold primary-color mt-5'><span className='text-white'>I&lsquo;m </span>Pradeep</p>
                 <p className='text-5xl font-bold primary-color'>Rawat</p>
 
                 <p className='text-xl py-6'>A freelancer web developer</p>

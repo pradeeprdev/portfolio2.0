@@ -13,17 +13,16 @@ const Contact = () => {
     message: ''
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: value
+      [name]: value,
     });
   };
-
-  const handleSubmit = (e) => {
+  
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('Form Data:', formData);
   };
 
   return (
@@ -93,7 +92,6 @@ const Contact = () => {
                 <div>
                   <textarea
                     placeholder='Message'
-                    type="text"
                     id="message"
                     name="message"
                     value={formData.message}

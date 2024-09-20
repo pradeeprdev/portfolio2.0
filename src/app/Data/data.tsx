@@ -33,6 +33,11 @@ export const servicieItems = [
     {icon: "app", title: "App Developement"},
     {icon: "design", title: "Graphic Design"},
 ]
+
+interface SkillItem {
+    name: string;
+    rating: number; // Ensure this is a number
+}
   
 export const skillItems = [
     {name: "Next JS", rating: "7"},

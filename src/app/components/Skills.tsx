@@ -2,6 +2,7 @@ import React from 'react'
 import { skillItems } from '../Data/data'
 
 const Skills = () => {
+    
   return (
     <div className='p-5 pt-60' id='Skills'>
         <div className='flex justify-center'>
@@ -16,11 +17,11 @@ const Skills = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-20">
             {skillItems.map((item, index) => (
                 <div key={index} className="relative rounded-md bg-gray-100 bg-opacity-15 p-1">
-                    <div className='absolute bottom-2 flex justify-between' style={{width: `${(item.rating*10)}%` }}>
+                    <div className='absolute bottom-2 flex justify-between' style={{width: `${(Number(item.rating)*10)}%` }}>
                         <div>{item.name}</div>
-                        <div>{item.rating*10}%</div>
+                        <div>{Number(item.rating)*10}%</div>
                     </div>
-                    <div className={`absolute top-0 left-0 rounded-md bg-[#ffbd39] p-1`} style={{width: `${(item.rating*10)}%` }}>
+                    <div className={`absolute top-0 left-0 rounded-md bg-[#ffbd39] p-1`} style={{width: `${(Number(item.rating)*10)}%` }}>
                     </div>
                 </div>
             ))}
