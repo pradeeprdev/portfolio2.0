@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 import HeroImage from '../../../public/Hero.png'
+import { aboutItems, totalProjects } from '../Data/data';
 
 const About = () => {
   return (
@@ -16,23 +17,17 @@ const About = () => {
             <p className='text-gray-400 py-5'>Eager to leverage technical skills and problem-solving abilities to contribute to innovative projects in a fast-paced environment.</p>
             <div className='flex py-5'>
                 <ul className='font-bold space-y-4'>
-                    <li>Name:</li>
-                    <li>Date of birth:</li>
-                    <li>Address:</li> 
-                    <li>Zip code:</li> 
-                    <li>Email:</li> 
-                    <li>Phone:</li> 
+                {aboutItems.map((item, index) => (
+                    <li key={index}>{item.name}:</li>
+                ))}
                 </ul>
                 <ul className='text-gray-400 pl-5 space-y-4'>
-                    <li>Pradeep Rawat</li>
-                    <li>August 01, 2002</li>
-                    <li>Gwalior</li>  
-                    <li>0000</li>  
-                    <li>pradeeprawat1717@gmail.com</li>
-                    <li>+91-89827-48401</li>  
+                {aboutItems.map((item, index) => (
+                    <li key={index}>{item.description}</li>
+                ))}
                 </ul>
             </div>
-            <p className='text-xl py-4'><span className='primary-color'>10</span> Project complete</p>
+            <p className='text-xl py-4'><span className='primary-color'>{totalProjects}</span> Project complete</p>
             <div className='text-xs tracking-widest button primary-button text-black w-fit'>DOWNLOAD CV</div>
         </div>
     </div>

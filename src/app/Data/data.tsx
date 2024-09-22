@@ -11,6 +11,15 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
+export const aboutItems = [
+    { name: 'Name', description: 'Pradeep Rawat'},
+    { name: 'Date Of Birth', description: 'August 30, 2002'},
+    { name: 'Address', description: 'Gwalior, India'},
+    { name: 'Zip code', description: '475110'},
+    { name: 'Email', description: 'pradeeprawat1717@gmail.com'},
+    { name: 'Phone', description: '+91-89827-48401'},
+]
+
 export const navItems = [
     { name: "Home", link: "#home" },
     { name: "About", link: "#about" },
@@ -36,7 +45,7 @@ export const servicieItems = [
 
 interface SkillItem {
     name: string;
-    rating: number; // Ensure this is a number
+    rating: number;
 }
   
 export const skillItems = [
@@ -45,6 +54,8 @@ export const skillItems = [
     {name: "Blockchain", rating: "5"},
     {name: "Cloud Computing", rating: "6"},
 ]
+
+export const totalProjects = '12';
 
 export const projectItems = [
     {name: "Ideamaze", category: "Web Development", image: Ideamaze},
