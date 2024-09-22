@@ -36,9 +36,9 @@ const Highlights = () => {
               </div>
             </div>
             <p className='font-bold text-4xl mt-20'>I am <span className='primary-color'>Available</span> for freelancing</p>
-            <p className='mt-5 text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sit totam quisquam consectetur libero quibusdam, illo iure. Sunt, exercitationem tempore?</p>
+            <p className='mt-5 text-gray-500'>Ready to turn your ideas into reality? Whether it&apos;s building dynamic web applications or exploring blockchain and cloud solutions, I bring dedication and expertise to every project. Let&apos;s collaborate and create something impactful!</p>
             <div className='flex justify-center mt-5'>
-              <div className='text-xs tracking-widest button primary-button text-black w-fit'>HIRE ME</div>
+              <a href='#About'><div className='text-xs tracking-widest button primary-button text-black w-fit'>HIRE ME</div></a>
             </div>
           </div>
         </div>

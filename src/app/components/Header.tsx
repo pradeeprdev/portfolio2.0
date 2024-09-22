@@ -10,7 +10,7 @@ const Header = () => {
         <div className='fixed w-screen z-10'  style={{ maxWidth: '70rem' }}>
         <div className='flex justify-between bg-black items-center py-3 p-5'>
             <div className='font-extrabold text-2xl hover:cursor-pointer '>
-                Pradeep
+            <a href="#Home">Pradeep</a>     
             </div>
             <div className='hidden md:block'>
                 <ul className='flex gap-6'>

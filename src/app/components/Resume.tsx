@@ -1,7 +1,15 @@
+"use client";
+
 import React from 'react'
 import { resumeItems } from '../Data/data'
 
 const Resume = () => {
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = '/Pradeep_Rawat_Resume.pdf';
+        link.download = 'Pradeep_Rawat_Resume.pdf';
+        link.click();
+    };
   return (
     <div className='p-5 pt-20' id='Resume'>
         <div className='flex justify-center'>
@@ -12,7 +20,7 @@ const Resume = () => {
             <div>
             </div>
         </div>
-        <p className='mt-7 text-center'>About Eager to leverage technical skills and problem-solving abilities to contribute to innovative projects in a fast-paced environment.</p>
+        <p className='mt-7 text-center'>I am passionate about applying my technical expertise and problem-solving abilities to drive innovation and deliver impactful solutions. I thrive in dynamic, fast-paced environments, where I can contribute to forward-thinking projects and continually refine my skills.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-20">
             {resumeItems.map((item, index) => (
                 <div key={index} className="rounded-md bg-gray-100 bg-opacity-15 p-8">
@@ -24,7 +32,7 @@ const Resume = () => {
             ))}
         </div>
         <div className='flex justify-center mt-20'>
-            <div className='text-xs tracking-widest button primary-button text-black w-fit'>DOWNLOAD CV</div>
+            <div onClick={handleDownload} className='text-xs tracking-widest button primary-button text-black w-fit'>DOWNLOAD CV</div>
         </div>
     </div>
   )

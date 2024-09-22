@@ -15,8 +15,8 @@ const Hero = () => {
                 <p className='text-xl py-6'>A freelancer web developer</p>
 
                 <div className='flex'>
-                    <div className='text-xs tracking-widest button primary-button text-black'>HIRE ME</div>
-                    <div className='text-xs tracking-widest button border border-gray-400 mx-1'>MY WORK</div>
+                    <a href='#About'><div className='text-xs tracking-widest button primary-button text-black'>HIRE ME</div></a>
+                    <a href='#Projects'><div className='text-xs tracking-widest button border border-gray-400 mx-1'>MY WORK</div></a>
                 </div>
             </div>
             <div className='h-screen'>

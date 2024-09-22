@@ -1,9 +1,17 @@
+"use client";
+
 import React from 'react'
 import Image from 'next/image';
 import HeroImage from '../../../public/Hero.png'
 import { aboutItems, totalProjects } from '../Data/data';
 
 const About = () => {
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = '/Pradeep_Rawat_Resume.pdf';
+        link.download = 'Pradeep_Rawat_Resume.pdf';
+        link.click();
+    };
   return (
     <div className='flex pt-28 p-5' id='About'>
         <div className='hidden md:block' style={{maxWidth: '70rem'}}>
@@ -28,7 +36,7 @@ const About = () => {
                 </ul>
             </div>
             <p className='text-xl py-4'><span className='primary-color'>{totalProjects}</span> Project complete</p>
-            <div className='text-xs tracking-widest button primary-button text-black w-fit'>DOWNLOAD CV</div>
+            <div onClick={handleDownload} className='text-xs tracking-widest button primary-button text-black w-fit'>DOWNLOAD CV</div>
         </div>
     </div>
   )

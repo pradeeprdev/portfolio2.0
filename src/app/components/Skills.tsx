@@ -13,7 +13,7 @@ const Skills = () => {
             <div>
             </div>
         </div>
-        <p className='mt-10 text-center'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa minus excepturi suscipit omnis quas quidem, corrupti et quasi sapiente similique.</p>
+        <p className='mt-10 text-center'>I thrive on bringing innovative ideas to life through code. With a passion for building responsive web applications and a growing interest in blockchain and cloud technologies.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-20">
             {skillItems.map((item, index) => (
                 <div key={index} className="relative rounded-md bg-gray-100 bg-opacity-15 p-1">

@@ -64,14 +64,14 @@ export const projectItems = [
 ]
 
 export const highlightItems = [
-    {name: 'Projects', count: '10'},
-    {name: 'Projects', count: '10'},
+    {name: 'Happy Customers', count: '5'},
+    {name: 'Complete Projects', count: '12'},
     {name: 'Projects', count: '10'},
     {name: 'Projects', count: '10'},
 ]
 
 export const contactItems = [
-    {name: 'Address', description: 'Una, Himachal Pradesh', icon: HomeIcon},
+    {name: 'Address', description: 'Gwalior, India', icon: HomeIcon},
     {name: 'Contact Number', description: '+91 8982748401', icon: PhoneEnabledIcon},
     {name: 'Email Address', description: 'pradeeprawat1717@gmail.com', icon: EmailIcon},
     {name: 'Website', description: 'pradeeprawat.com', icon: LanguageIcon},
@@ -80,36 +80,36 @@ export const contactItems = [
 export const footerItems = [
     {name: 'About', 
         subItems : [
-            {name: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.', icon: ''},
+            {name: 'About Eager to leverage technical skills and problem-solving abilities to contribute to innovative projects in a fast-paced environment.', icon: ''},
         ],
         socialProfiles : [
-            {name: 'X', url: '', icon: XIcon},
-            {name: 'Facebook', url: '', icon: FacebookIcon},
-            {name: 'Instagram', url: '', icon: InstagramIcon},
+            {name: 'X', url: 'https://x.com/i_pradeep_rawat', icon: XIcon},
+            {name: 'Facebook', url: 'https://www.facebook.com/profile.php?id=100013147477974', icon: FacebookIcon},
+            {name: 'Instagram', url: 'https://www.instagram.com/ipradeepraawat', icon: InstagramIcon},
         ],
     },
     {name: 'Links',
         subItems : [
-            {name: 'Home', url: '', icon: ArrowRightAltIcon},
-            {name: 'About', url: '', icon: ArrowRightAltIcon},
-            {name: 'Services', url: '', icon: ArrowRightAltIcon},
-            {name: 'Contanct', url: '', icon: ArrowRightAltIcon},
+            {name: 'Home', url: 'Home', icon: ArrowRightAltIcon},
+            {name: 'About', url: 'About', icon: ArrowRightAltIcon},
+            {name: 'Services', url: 'Services', icon: ArrowRightAltIcon},
+            {name: 'Contanct', url: 'Contanct', icon: ArrowRightAltIcon},
         ],
     },
     {name: 'Services',
         subItems : [
-            {name: 'Web Design', url: '', icon: ArrowRightAltIcon},
-            {name: 'Web Development', url: '', icon: ArrowRightAltIcon},
-            {name: 'Business Strategy', url: '', icon: ArrowRightAltIcon},
-            {name: 'Data Analysis', url: '', icon: ArrowRightAltIcon},
-            {name: 'Graphic Design', url: '', icon: ArrowRightAltIcon},
+            {name: 'Web Design', url: 'Services', icon: ArrowRightAltIcon},
+            {name: 'Web Development', url: 'Services', icon: ArrowRightAltIcon},
+            {name: 'Business Strategy', url: 'Services', icon: ArrowRightAltIcon},
+            {name: 'Data Analysis', url: 'Services', icon: ArrowRightAltIcon},
+            {name: 'Graphic Design', url: 'Services', icon: ArrowRightAltIcon},
         ],
     },
     {name: 'Have a Questions?',
         subItems : [
-            {name: '203 Fake St. Mountain View, San Francisco, California, USA', url: '', icon: LocationOnIcon},
-            {name: '+91 8982748401', url: '', icon: PhoneEnabledIcon},
-            {name: 'pradeeprawat.com', url: '', icon: EmailIcon},
+            {name: 'Gwalior, India', url: 'About', icon: LocationOnIcon},
+            {name: '+91 8982748401', url: 'About', icon: PhoneEnabledIcon},
+            {name: 'pradeeprawat.com', url: 'About', icon: EmailIcon},
         ],
     },
 ]

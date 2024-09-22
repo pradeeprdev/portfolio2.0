@@ -11,7 +11,8 @@ const Footer = () => {
                     {item.subItems && item.subItems.length > 0 &&
                     <div>   
                     {item.subItems.map((subItem, subIndex) => (
-                        <div key={subIndex} className='text-secondary flex mt-4'>
+                        <a key={subIndex} href={`#${subItem.name}`}>
+                        <div className='text-secondary flex mt-4'>
                             {subItem.icon && 
                             <div className='mr-2'>
                                 <subItem.icon 
@@ -20,16 +21,19 @@ const Footer = () => {
                             </div>}
                             <p className='leading-7'>{subItem.name}</p>
                         </div>
+                       </a>
                     ))}
                     </div>}
                     {item.socialProfiles && item.socialProfiles.length > 0 && 
                     <div className='flex mt-14'>
                         {item.socialProfiles.map((profile, subIndex) => (
-                            <div key={subIndex} className={`text-secondary bg-secondary rounded-full p-3 ${subIndex != 0 && 'ml-4'}`}>
-                                <profile.icon 
-                                    fontSize="medium"
-                                />
-                            </div>
+                            <a key={subIndex} href={profile.url} target='_blank'>
+                                <div className={`text-secondary bg-secondary rounded-full p-3 ${subIndex != 0 && 'ml-4'}`}>
+                                    <profile.icon 
+                                        fontSize="medium"
+                                    />
+                                </div>
+                            </a> 
                         ))}
                     </div>}
                 </div>

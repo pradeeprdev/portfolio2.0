@@ -33,7 +33,7 @@ const Contact = () => {
                 <p className='absolute -left-3 top-5 text-8xl opacity-15 font-bold'>Contact</p>
             </div>
         </div>
-        <p className='mt-10 text-center text-gray-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, sapiente explicabo doloremque consequatur autem debitis at? Ipsum delectus ab incidunt?</p>
+        <p className='mt-10 text-center text-gray-400'>Let&apos;s Connect and Build Something Amazing Together!</p>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-20">
             {contactItems.map((item, index) => (
                 <div key={index} className='text-center'>
