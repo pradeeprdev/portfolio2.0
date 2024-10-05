@@ -52,6 +52,8 @@ export const skillItems = [
     {name: "React JS", rating: "8"},
     {name: "Next JS", rating: "7"},
     {name: "APIs", rating: "7"},
+    {name: "MongoDB", rating: "6"},
+    {name: "Node.js", rating: "7"},
     {name: "Version Control", rating: "8"},
     {name: "Blockchain", rating: "5"},
     {name: "Cloud Computing", rating: "5"},
