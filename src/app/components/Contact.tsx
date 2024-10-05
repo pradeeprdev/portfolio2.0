@@ -13,6 +13,9 @@ const Contact = () => {
     message: ''
   });
 
+  const emailItem = contactItems.find(item => item.name === 'Email Address');
+  const emailTo = emailItem ? emailItem.description : 'pradeeprawat8401@gmail.com';
+
   const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData({
@@ -21,8 +24,11 @@ const Contact = () => {
     });
   };
   
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const { name, email, subject, message } = formData;
+    const mailtoLink = `mailto:${emailTo}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} <${email}>\n\n${message}`)}`;
+    window.location.href = mailtoLink;
   };
 
   return (
@@ -100,7 +106,9 @@ const Contact = () => {
                     className='message-input'
                   />
                 </div>
-                <div className='text-xs tracking-widest button primary-button text-black w-fit mt-5'>Send Message</div>
+                <button type="submit" className='text-xs tracking-widest button primary-button text-black w-fit mt-5'>
+                  Send Message
+                </button>
               </form>
             </div>
           </div>
