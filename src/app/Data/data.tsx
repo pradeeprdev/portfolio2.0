@@ -64,10 +64,10 @@ export const projectItems = [
 ]
 
 export const highlightItems = [
-    {name: 'Happy Customers', count: '5'},
-    {name: 'Complete Projects', count: '12'},
-    {name: 'Team Members', count: '5'},
-    {name: 'Ongoing Projects', count: '3'},
+    {name: 'Satisfied Clients', count: '5+'},
+    {name: 'Client Retention Rate', count: '95%'},
+    {name: 'Skilled Team Members', count: '5'},
+    {name: 'Active Projects', count: '3'},
 ]
 
 export const contactItems = [
