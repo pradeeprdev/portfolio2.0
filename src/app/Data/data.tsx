@@ -66,15 +66,15 @@ export const projectItems = [
 export const highlightItems = [
     {name: 'Happy Customers', count: '5'},
     {name: 'Complete Projects', count: '12'},
-    {name: 'Projects', count: '10'},
-    {name: 'Projects', count: '10'},
+    {name: 'Team Members', count: '5'},
+    {name: 'Ongoing Projects', count: '3'},
 ]
 
 export const contactItems = [
     {name: 'Address', description: 'Gwalior, India', icon: HomeIcon},
     {name: 'Contact Number', description: '+91 8982748401', icon: PhoneEnabledIcon},
     {name: 'Email Address', description: 'pradeeprawat1717@gmail.com', icon: EmailIcon},
-    {name: 'Website', description: 'pradeeprawat.com', icon: LanguageIcon},
+    {name: 'Website', description: 'https://pradeeprawat.vercel.app/', icon: LanguageIcon},
 ]
 
 export const footerItems = [
@@ -109,7 +109,7 @@ export const footerItems = [
         subItems : [
             {name: 'Gwalior, India', url: 'About', icon: LocationOnIcon},
             {name: '+91 8982748401', url: 'About', icon: PhoneEnabledIcon},
-            {name: 'pradeeprawat.com', url: 'About', icon: EmailIcon},
+            {name: 'https://pradeeprawat.vercel.app', url: 'About', icon: EmailIcon},
         ],
     },
 ]
