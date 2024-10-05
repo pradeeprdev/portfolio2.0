@@ -14,7 +14,6 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 export const aboutItems = [
     { name: 'Name', description: 'Pradeep Rawat'},
     { name: 'Address', description: 'Gwalior, India'},
-    { name: 'Zip code', description: '475110'},
     { name: 'Email', description: 'pradeeprawat1717@gmail.com'},
     { name: 'Phone', description: '+91-89827-48401'},
     { name: 'Twitter', description: 'pradeepraawat'},
