@@ -74,7 +74,7 @@ export const contactItems = [
     {name: 'Address', description: 'Gwalior, India', icon: HomeIcon},
     {name: 'Contact Number', description: '+91 8982748401', icon: PhoneEnabledIcon},
     {name: 'Email Address', description: 'pradeeprawat1717@gmail.com', icon: EmailIcon},
-    {name: 'Website', description: 'https://pradeeprawat.vercel.app/', icon: LanguageIcon},
+    {name: 'Website', description: 'https://pradeeprawat.vercel.app', icon: LanguageIcon},
 ]
 
 export const footerItems = [
