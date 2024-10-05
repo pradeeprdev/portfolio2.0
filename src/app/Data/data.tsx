@@ -31,10 +31,10 @@ export const navItems = [
 ];
 
 export const resumeItems = [
-    { duration: "September 2024 - Present", title: "Jr. Data Engineer", organization: "64 Sqares", description: "Working on snowflak"},
+    { duration: "September 2024 - Present", title: "Jr. Data Engineer", organization: "64 Sqares", description: "Working on data engineering tasks, optimizing customer interaction prompts, integrating APIs for seamless data flow, and automating processes with Python scripting."},
     { duration: "January 2024 - August 2024", title: "Software Developer Intern", organization: "Stratbeans", description: "Fixed 100+ critical bugs in the Byrecasting Application, resulting in a 20% reduction in user-reported issues"},
     { duration: "July 2023 - August 2023", title: "Software Developer Intern", organization: "Tech Superior Consulting", description: "Improved website conversion rate by 10% through the development of a new contact page with API integration."},
-    { duration: "2020-2024", title: "Bachelor's of Technology", organization: "Amity University Madhya Pradesh", description: "Completed btech from Amity"},
+    { duration: "2020-2024", title: "Bachelor of Technology (B.Tech)", organization: "Amity University Madhya Pradesh", description: "Earned a B.Tech degree with a focus on Computer Science, developing a strong foundation in software development and engineering principles."},
 ];
 
 export const servicieItems = [
@@ -49,10 +49,22 @@ interface SkillItem {
 }
   
 export const skillItems = [
-    {name: "Next JS", rating: "7"},
     {name: "React JS", rating: "8"},
+    {name: "Next JS", rating: "7"},
+    {name: "APIs", rating: "7"},
+    {name: "Version Control", rating: "8"},
     {name: "Blockchain", rating: "5"},
-    {name: "Cloud Computing", rating: "6"},
+    {name: "Cloud Computing", rating: "5"},
+    {name: "Python", rating: "6"},
+    {name: "SQL", rating: "6"},
+    {name: "Angular", rating: "6"},
+    {name: "Laravel", rating: "7"},
+    {name: "Tailwind CSS", rating: "6"},
+    {name: "Bootstrap", rating: "7"},
+    {name: "HTML", rating: "8"},
+    {name: "CSS", rating: "8"},
+    {name: "C", rating: "7"},
+    {name: "C++", rating: "7"},
 ]
 
 export const totalProjects = '12';
