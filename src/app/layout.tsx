@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Pradeep Rawat Portfolio",
-  description: "AWelcome to my portfolio! I am an innovative and detail-oriented software developer dedicated to crafting impactful solutions through my technical expertise and collaborative approach. Explore my projects and experiences that showcase my commitment to excellence in the tech industry.",
+  title: "Pradeep Rawat | Full Stack Developer | Freelancer",
+  description: "Welcome to my portfolio! I’m a Full Stack Developer and freelancer, delivering impactful solutions through technical expertise and collaboration. Explore my work in tech and freelancing.",
 };
 
 export default function RootLayout({
