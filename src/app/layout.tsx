@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Pradeep Rawat | Full Stack Developer | Freelancer",
+  title: "Pradeep Rawat Portfolio | Full Stack Developer | Freelancer",
   description: "Welcome to my portfolio! I’m a Full Stack Developer and freelancer, delivering impactful solutions through technical expertise and collaboration. Explore my work in tech and freelancing.",
 };
 
