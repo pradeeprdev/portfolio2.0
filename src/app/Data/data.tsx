@@ -22,7 +22,7 @@ export const aboutItems = [
 export const navItems = [
     { name: "Home", link: "#home" },
     { name: "About", link: "#about" },
-    { name: "Resume", link: "#resume" },
+    { name: "Experience", link: "#resume" },
     { name: "Services", link: "#services" },
     { name: "Skills", link: "#skills" },
     { name: "Projects", link: "#projects" },
@@ -30,7 +30,9 @@ export const navItems = [
 ];
 
 export const resumeItems = [
-    { duration: "September 2024 - Present", title: "Jr. Data Engineer", organization: "64 Sqares", description: "Working on data engineering tasks, optimizing customer interaction prompts, integrating APIs for seamless data flow, and automating processes with Python scripting."},
+    { duration: "May 2025 - Present", title: "MERN Stack Developer", organization: "JPLoft", description: "Developing full-stack web applications using the MERN stack. Focused on building responsive UIs, integrating RESTful APIs, and optimizing performance. Collaborating with the backend team to deliver scalable, user-friendly features."},
+    { duration: "February 2025 - March 2025", title: "Full Stack Developer", organization: "Slashash", description: "Engineered a Python script leveraging prompt engineering for real-time MySQL-to-ClickHouse data migration via Kafka and Debezium, reducing sync time by 40%"},
+    { duration: "September 2024 - January 2025", title: "Jr. Data Engineer", organization: "64 Sqares", description: "Worked on data engineering tasks, optimizing customer interaction prompts, integrating APIs for seamless data flow, and automating processes with Python scripting."},
     { duration: "January 2024 - August 2024", title: "Software Developer Intern", organization: "Stratbeans", description: "Fixed 100+ critical bugs in the Byrecasting Application, resulting in a 20% reduction in user-reported issues"},
     { duration: "July 2023 - August 2023", title: "Software Developer Intern", organization: "Tech Superior Consulting", description: "Improved website conversion rate by 10% through the development of a new contact page with API integration."},
     { duration: "2020-2024", title: "Bachelor of Technology (B.Tech)", organization: "Amity University Madhya Pradesh", description: "Earned a B.Tech degree with a focus on Computer Science, developing a strong foundation in software development and engineering principles."},
@@ -48,39 +50,30 @@ interface SkillItem {
 }
   
 export const skillItems = [
-    {name: "React JS", rating: "8"},
+    {name: "React JS", rating: "9"},
+    {name: "Node.js", rating: "8"},
+    {name: "Express.js", rating: "8"},
+    {name: "MongoDB", rating: "8"},
     {name: "Next JS", rating: "7"},
-    {name: "APIs", rating: "7"},
-    {name: "MongoDB", rating: "6"},
-    {name: "Node.js", rating: "7"},
+    {name: "TypeScript", rating: "7"},
+    {name: "APIs", rating: "9"},
     {name: "Version Control", rating: "8"},
-    {name: "Blockchain", rating: "5"},
-    {name: "Cloud Computing", rating: "5"},
-    {name: "Python", rating: "6"},
-    {name: "SQL", rating: "6"},
-    {name: "Angular", rating: "6"},
-    {name: "Laravel", rating: "7"},
-    {name: "Tailwind CSS", rating: "6"},
-    {name: "Bootstrap", rating: "7"},
-    {name: "HTML", rating: "8"},
-    {name: "CSS", rating: "8"},
-    {name: "C", rating: "7"},
-    {name: "C++", rating: "7"},
+    {name: "Tailwind CSS", rating: "9"},
 ]
 
 export const totalProjects = '12';
 
 export const projectItems = [
-    {name: "Ideamaze", category: "Web Development", image: Ideamaze},
+    {name: "Ideamaze", category: "Web Development", image: Ideamaze, url: ''},
     {name: "Table Master", category: "Web Development", image: tableMaster},
     {name: "D-vote", category: "Blockchain", image: blockchain},
 ]
 
 export const highlightItems = [
-    {name: 'Satisfied Clients', count: '5+'},
-    {name: 'Client Retention Rate', count: '95%'},
-    {name: 'Skilled Team Members', count: '5'},
-    {name: 'Active Projects', count: '3'},
+    {name: 'Satisfied Clients', count: 10, isPlus: true},
+    {name: 'Client Retention Rate', count: 95, isPlus: true},
+    {name: 'Skilled Team Members', count: 5, isPlus: false},
+    {name: 'Active Projects', count: 3, isPlus: false},
 ]
 
 export const contactItems = [

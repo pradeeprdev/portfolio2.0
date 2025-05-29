@@ -2,9 +2,10 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { contactItems } from '../Data/data'; // Adjust path as per your project
+import { contactItems } from '../Data/data';
 import HeroImage from '../../../public/Hero.png';
 import emailjs from '@emailjs/browser';
+import { motion } from 'framer-motion';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -51,7 +52,6 @@ const Contact: React.FC = () => {
         message: '',
       });
 
-      // Clear the success message after 5 seconds
       setTimeout(() => {
         setIsSent(false);
       }, 5000);
@@ -64,21 +64,44 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="pt-56 p-5" id="Contact">
-      <div className="flex justify-center">
+    <div className="pt-56 px-5 overflow-x-hidden" id="Contact">
+      {/* Title Section */}
+      <motion.div
+        className="flex justify-center"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
         <div className="relative">
           <p className="text-6xl font-bold">Contact Me</p>
           <p className="absolute -left-3 top-5 text-8xl opacity-15 font-bold">
             Contact
           </p>
         </div>
-      </div>
-      <p className="mt-10 text-center text-gray-400">
+      </motion.div>
+
+      <motion.p
+        className="mt-10 text-center text-gray-400"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        viewport={{ once: true }}
+      >
         Let&apos;s Connect and Build Something Amazing Together!
-      </p>
+      </motion.p>
+
+      {/* Contact Items */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-20">
         {contactItems.map((item, index) => (
-          <div key={index} className="text-center">
+          <motion.div
+            key={index}
+            className="text-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            viewport={{ once: true }}
+          >
             <div className="flex justify-center">
               <div className="h-24 w-24 primary-color rounded-full bg-secondary flex justify-center items-center">
                 <item.icon fontSize="large" />
@@ -86,19 +109,34 @@ const Contact: React.FC = () => {
             </div>
             <p className="mt-8 uppercase">{item.name}</p>
             <p className="mt-8">{item.description}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
+
+      {/* Form Section */}
       <div className="mt-36">
         <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="bg-secondary">
+          <motion.div
+            className="bg-secondary max-w-full"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             <Image
               src={HeroImage}
               alt="Hero Image"
-              className="object-cover w-full h-full"
+              className="object-cover w-full h-full max-w-full"
             />
-          </div>
-          <div className="bg-white text-black p-10">
+          </motion.div>
+
+          <motion.div
+            className="bg-white text-black p-10"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             <form onSubmit={handleSubmit}>
               <div>
                 <input
@@ -109,7 +147,7 @@ const Contact: React.FC = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="input"
+                  className="w-full p-3 mb-4 border border-gray-300 rounded-md"
                 />
               </div>
               <div>
@@ -121,7 +159,7 @@ const Contact: React.FC = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="input"
+                  className="w-full p-3 mb-4 border border-gray-300 rounded-md"
                 />
               </div>
               <div>
@@ -133,7 +171,7 @@ const Contact: React.FC = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="input"
+                  className="w-full p-3 mb-4 border border-gray-300 rounded-md"
                 />
               </div>
               <div>
@@ -144,7 +182,7 @@ const Contact: React.FC = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  className="textarea h-52"
+                  className="w-full p-3 mb-4 border border-gray-300 rounded-md h-52"
                 />
               </div>
               <button
@@ -159,7 +197,7 @@ const Contact: React.FC = () => {
               )}
               {error && <p className="text-red-500 mt-2">{error}</p>}
             </form>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

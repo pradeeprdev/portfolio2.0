@@ -39,7 +39,7 @@ const Footer = () => {
                 </div>
             ))}
         </div>
-        <p className='text-center text-secondary mt-32 mb-36'>Copyright ©2024 All rights reserved | Pradeep Rawat</p>
+        <p className='text-center text-secondary mt-32 mb-36'>Copyright ©2025 All rights reserved | Pradeep Rawat</p>
     </div>
   )
 }
