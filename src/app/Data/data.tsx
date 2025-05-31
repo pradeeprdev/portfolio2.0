@@ -83,7 +83,7 @@ export const projectItems = [
       name: "Your Beans",
       category: "SAAS Application",
       image: CoffeeSaasProjectImg,
-      url: 'http://tkc.drdineshsharma.com',
+      url: 'https://coffee-liart-ten.vercel.app',
       description: "Coffee e-commerce platform with custom packaging UI.",
       tech: "React, Tailwind"
     },
