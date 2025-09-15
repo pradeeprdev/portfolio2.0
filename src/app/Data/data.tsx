@@ -12,6 +12,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 import HRMSProjectImg from '../../../public/assets/projects/hrms.png'
+import VKLaundryImg from '../../../public/assets/projects/vklaundry.png'
 import IdeamazeProjectImg from '../../../public/assets/projects/idemaze.png'
 import PulseFitProjectImg from '../../../public/assets/projects/pulsefit.png'
 import TKCProjectImg from '../../../public/assets/projects/tkc.png'
@@ -72,6 +73,15 @@ export const totalProjects = '12';
 
 export const projectItems = [
     {
+        name: "VK Laundry",
+        category: "Laundry Application",
+        image: VKLaundryImg, // replace with VK Laundry project image if available
+        url: "https://www.vklaundry.com",
+        description:
+        "A professional laundry and dry-cleaning service web application built with React and Tailwind. It includes sections like About Us, Services, Pricing, Testimonials, and Contact, with a clean UI for seamless user experience.",
+        tech: "React, Tailwind, Framer Motion",
+    },
+        {
       name: "PulseFit",
       category: "Gym Application",
       image: PulseFitProjectImg,
